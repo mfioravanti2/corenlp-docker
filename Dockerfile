@@ -1,14 +1,14 @@
 FROM java:jre-alpine
 
-MAINTAINER Moti Zilberman <motiz88@gmail.com>
+MAINTAINER Mark Fioravanti <mark.fioravanti.ii@gmail.com>
 
 RUN apk add --update --no-cache \
 	 unzip \
 	 wget
 
-RUN wget http://nlp.stanford.edu/software/stanford-corenlp-full-2015-12-09.zip
-RUN unzip stanford-corenlp-full-2015-12-09.zip && \
-	rm stanford-corenlp-full-2015-12-09.zip
+RUN wget http://nlp.stanford.edu/software/stanford-corenlp-full-2018-02-27.zip
+RUN unzip stanford-corenlp-full-2018-02-27.zip && \
+	rm stanford-corenlp-full-2018-02-27.zip
 
 WORKDIR stanford-corenlp-full-2015-12-09
 
